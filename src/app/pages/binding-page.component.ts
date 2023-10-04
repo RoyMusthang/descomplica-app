@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
     <br/>
        <img [src]="image" [style]="{width: width}" />
 
-    <div class="alert">
+    <div (click)="enviarDados()" class="alert" [class]="{sucesso: sucesso}">
         Alerta
     </div>
     `,
@@ -14,7 +14,11 @@ import { Component } from "@angular/core";
         .alert {
             width: 200px;
             height: 100px;
-            border: 1px solid blue
+            border: 1px solid black
+        }
+
+        .sucesso {
+            background-color: green
         }
     `]
 
@@ -23,4 +27,10 @@ import { Component } from "@angular/core";
 export class BindingComponent {
     image = "https://criptonizando.com/wp-content/uploads/2021/09/sNOOP-DOGG-1024x781-1.jpg"
     width = "300px"
+
+    sucesso = true
+
+    enviarDados() {
+        this.sucesso = !this.sucesso
+    }
 }
