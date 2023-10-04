@@ -1,9 +1,20 @@
 <app-header></app-header>
 <router-outlet></router-outlet>
-<ul>
+
+<div *ngIf="isPremium; else naoPremium">
+    <p>você é premium, pagou porque?</p>
+</div>
+
+<ng-template #naoPremium>
+    não é premium
+</ng-template>
+
+<ul *ngFor="let item of items">
     <li>item 1 - {{description1}}</li>
     <li>item 2 - {{description2}}</li>
+    <li>rota : {{item.value}}</li>
 </ul>
+
 
 <label>description2:</label>
 <br>

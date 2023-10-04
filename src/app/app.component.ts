@@ -9,13 +9,15 @@ export class AppComponent {
   title = 'descomplica';
   description1 = 'dereguejhonson'
   description2 = ''
-  
+
+  isPremium = false
+
 
   items = [
-    "mid",
-    "top",
-    "jungle",
-    "adc",
-    "sup"
+    { value:"mid"},
+    { value:"top"},
+    { value:"jungle"},
+    { value:"adc"},
+    { value:"sup"}
   ]
 }
