@@ -1,3 +1,11 @@
 <app-header></app-header>
-<app-menu></app-menu>
-<app-footer></app-footer>
+<router-outlet></router-outlet>
+<ul>
+    <li>item 1 - {{description1}}</li>
+    <li>item 2 - {{description2}}</li>
+</ul>
+
+<label>description2:</label>
+<br>
+<input [(ngModel)]="description2">
+

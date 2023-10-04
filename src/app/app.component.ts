@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'descomplica';
+  description1 = 'dereguejhonson'
+  description2 = ''
+  
+
+  items = [
+    "mid",
+    "top",
+    "jungle",
+    "adc",
+    "sup"
+  ]
 }
