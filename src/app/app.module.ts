@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header.component';
 import { FormsModule } from '@angular/forms';
 import { ClientListPage } from './pages/client-page.component';
+import { BindingComponent } from './pages/binding-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ClientListPage
+    ClientListPage,
+    BindingComponent
   ],
   imports: [
     BrowserModule,

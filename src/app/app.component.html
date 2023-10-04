@@ -9,6 +9,7 @@
     não é premium
 </ng-template>
 
+
 <ul *ngFor="let item of items">
     <li>item 1 - {{description1}}</li>
     <li>rota : {{item.value}}</li>
@@ -22,3 +23,7 @@
 <input [(ngModel)]="value">
 <br>
 <button (click)="removeItem()">delete item</button>
+
+
+
+<app-binding></app-binding>
