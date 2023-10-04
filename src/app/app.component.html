@@ -11,12 +11,14 @@
 
 <ul *ngFor="let item of items">
     <li>item 1 - {{description1}}</li>
-    <li>item 2 - {{description2}}</li>
     <li>rota : {{item.value}}</li>
 </ul>
 
+<button (click)="adicionarItem()">adicionar item</button>
 
-<label>description2:</label>
+
+<label>novo item:</label>
 <br>
-<input [(ngModel)]="description2">
-
+<input [(ngModel)]="value">
+<br>
+<button (click)="removeItem()">delete item</button>

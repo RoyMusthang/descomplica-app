@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'descomplica';
   description1 = 'dereguejhonson'
-  description2 = ''
+  value = ''
 
   isPremium = false
 
@@ -20,4 +20,14 @@ export class AppComponent {
     { value:"adc"},
     { value:"sup"}
   ]
+
+  adicionarItem() {
+    this.items.push(
+      {value: this.value}
+    )
+  }
+
+  removeItem() {
+    this.items.pop()
+  }
 }
